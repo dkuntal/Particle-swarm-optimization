@@ -1,6 +1,7 @@
 import numpy as np
 import matplotlib.pylab as plt
 from math import *
+import sys
 from mpl_toolkits.mplot3d import Axes3D
 
 
@@ -16,7 +17,7 @@ class Particle(object):
         """
         self.position = x
         self.velocity = v
-        self.best_value = int
+        self.best_value = sys.maxsize
         self.best_position = self.position
         self.value = None
 
