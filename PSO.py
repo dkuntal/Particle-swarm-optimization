@@ -106,7 +106,7 @@ for i in range(number_of_steps):
     for particle in particles:  # update loop
         if min(values) < best_value:
             print('Bzzz! New minimum found: '+str(min(values)))
-        best_value = min(values)
+        best_value = min(min(values), best_value)
 
         particle.update_velocity(particles[values.index(min(values))].position, c)
         particle.update_position(dt)
