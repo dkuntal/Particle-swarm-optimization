@@ -85,8 +85,8 @@ x = np.linspace(x_begin, x_end, 100)
 y = np.linspace(y_begin, y_end, 100)
 X, Y = np.meshgrid(x, y)
 # fig = plt.figure()
-plt.ion()
-plt.show()
+# plt.ion()
+# plt.show()
 Z = np.array([function((x, y)) for x, y in zip(np.ravel(X), np.ravel(Y))])  # calculating values of function
 Z = Z.reshape(X.shape)
 
