@@ -112,7 +112,7 @@ for i in range(number_of_steps):
         particle.update_position(dt)
         ax.scatter(particle.position[0], particle.position[1], particle.value, s=50, c='y')
 
-    # plotting surface with transparency alpha = 0.2
-    ax.plot_surface(X, Y, Z, alpha=0.2)
-    plt.draw()
-    plt.clf()
+#     # plotting surface with transparency alpha = 0.2
+#     ax.plot_surface(X, Y, Z, alpha=0.2)
+#     plt.draw()
+#     plt.clf()
