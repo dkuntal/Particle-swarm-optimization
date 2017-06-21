@@ -97,7 +97,7 @@ Z = Z.reshape(X.shape)
 # main loop
 for i in range(number_of_steps):
     values = []
-    ax = fig.add_subplot(111, projection='3d')
+#     ax = fig.add_subplot(111, projection='3d')
 
     for particle in particles:  # calculation loop
         particle.get_value(function)
